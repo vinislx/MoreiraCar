@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    background-color: #353336;
+}
+
+header img {
+    width: 42px;
+    margin: 5px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.container-text {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    margin-left: 16px;
+}
+
+.apresentacao img {
+    width: 40%;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.text-apresentacao {
+    display: block;
+    margin-left: 16px;
+}
+
+.text-apresentacao h2 {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.text-apresentacao h3 {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+}
+
+aside h2 {
+    margin: 32px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+aside li img {
+    width: 250px;
+}
+
+.produtos li{
+    flex-wrap: wrap;
+    list-style: none;
+    display: inline-block;
+    width: 250px;
+}
+
+.produtos p {
+    font-size: 14px;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+}
+
+.produtos button {
+    width: 250px;
+    height: 24px;
+    border: none;
+    background-color: #eaac44;
+    color: #fff;
+    font-size: 16px;
+}
+
+.produtos li h3 {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header li{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .apresentacao img {
+        width: 100%;
+    } 
+
+    .apresentacao {
+        display: block;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .produtos {
+        margin: 0 16%;
+}
+
+header .container {
+    flex-direction: column;
+}
+
+header .container-text {
+    flex-direction: column;
+}
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    
+    .apresentacao img {
+        width: 100%;
+    }
+    
+    .apresentacao {
+        display: block;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .produtos li{
+        margin-left: 90px;
+        width: 35%;
+    }
+}
